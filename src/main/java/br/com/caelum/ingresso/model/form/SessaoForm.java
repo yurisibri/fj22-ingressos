@@ -1,5 +1,6 @@
 package br.com.caelum.ingresso.model.form;
 
+import java.math.BigDecimal;
 import java.time.LocalTime;
 
 import javax.validation.constraints.NotNull;
@@ -21,6 +22,16 @@ public class SessaoForm {
 	private LocalTime horario;
 	@NotNull
 	private Integer filmeId;
+	
+	private BigDecimal preco;
+
+	public BigDecimal getPreco() {
+		return preco;
+	}
+
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
 
 	public Integer getId() {
 		return id;
